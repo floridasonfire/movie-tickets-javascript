@@ -42,8 +42,10 @@ $( document ).ready(function() {
       var movie = new Movie (movieName, releaseType);
       var cust = new Customer (parseInt($("#cust_age").val()))
       var time = parseInt($(".movie-time").val())
+      console.log(time)
       var ticket = new Ticket(movie, time, cust)
-      var priceOfTicket = ticket.price
+      var priceOfTicket = ticket.price()
+      console.log(priceOfTicket)
 
       var ageDiscount = "$0"
       var matineeDiscount = "$0"
