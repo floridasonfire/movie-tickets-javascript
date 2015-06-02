@@ -1,8 +1,7 @@
 describe('Movie', function(){
   it("has a title and playtimes", function(){
-    var testMovie = new Movie("The Labyrinth", [12, 4, 9], "first")
+    var testMovie = new Movie("The Labyrinth", "first")
     expect(testMovie.movieTitle).to.equal("The Labyrinth")
-    expect(testMovie.times).to.eql([12, 4, 9])
     expect(testMovie.releaseType).to.eql("first")
 
   });
@@ -10,7 +9,7 @@ describe('Movie', function(){
 
 describe('Ticket', function() {
   it("has a time, movie name and release type, and customer age", function() {
-    var testMovie = new Movie("Test", 1, "first")
+    var testMovie = new Movie("Test", "first")
     var testCust = new Customer(88)
     var testTicket = new Ticket(testMovie, 1, testCust);
     expect(testTicket.showtime).to.eql(1);
@@ -29,7 +28,7 @@ describe('Customer', function(){
 
 describe('price', function(){
   it("calculates the price of a ticket", function(){
-    var testMovie = new Movie("Test", 1, "first")
+    var testMovie = new Movie("Test", "first")
     var testCust = new Customer(88);
     var testTicket = new Ticket(testMovie, 1, testCust);
     expect(testTicket.price()).to.equal(5);

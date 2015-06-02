@@ -1,0 +1,14 @@
+.page-header{
+  color:teal;
+  font-family:helvetica;
+  font-size:50px;
+}
+
+.show-price{
+  display:none;
+}
+
+.show-price span{
+  color:teal;
+  padding-left:20px;
+}

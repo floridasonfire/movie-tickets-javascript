@@ -18,13 +18,58 @@
   </head>
   <body>
     <div class="container">
+      <h1 class="page-header">Ticket Price</h1>
+        <div class="row movie-form-div">
+
+
+          <div class="col-sm-12">
+          <form class="movie-form">
+            <div class="form-group">
+              <label for="cust_age">Enter Your Age:</label>
+              <input type="number" id="cust_age" class="form-control" required autofocus>
+              <select class="movie-time">
+                <option class="time" value="12">12:00</option>
+                <option class="time" value= "17">5:00</option>
+                <option class="time" value="19.5">7:30</option>
+                <option class="time" value="22">10:00</option>
+              </select>
+              <select class="movie-title">
+                <option class="title" value="Mad Max|first">Mad Max</option>
+                <option class="title" value="Little Monsters|first">Little Monsters</option>
+                <option class="title" value="Interstellar|second">Interstellar</option>
+                <option class="title" value="Reality Bites|umpteenth">Reality Bites</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-warning find-price">Find Price</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12">
+
+          <div class="show-price">
+          <h4>Movie Title<span class="title"></span></h4>
+          <h4>Original Price<span class="price">$10</span></h4>
+          <h4>Age Discount<span class="age-discount"></span></h4>
+          <h4>Matinee Discount<span class="matinee-discount"></span></h4>
+          <h4>Run Type Discount<span class="run-type-discount"></span></h4>
+          <h3>Total Price<span class="total-price"</span></h3>
+          </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
 
 
 
 
 
 
-      
     </div>
   </body>
 </html>
