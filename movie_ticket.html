@@ -8,25 +8,29 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <!-- custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
     <!-- jQuery -->
     <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+
     <!-- bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Custom Scripts -->
     <script src='js/scripts.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
   </head>
   <body>
     <div class="container">
-      <h1 class="page-header">Ticket Price</h1>
+      <h1 class="page-header">Ticket Pricer</h1>
         <div class="row movie-form-div">
 
 
-          <div class="col-sm-12">
+          <div class="col-sm-12 movie-div">
           <form class="movie-form">
             <div class="form-group">
               <label for="cust_age">Enter Your Age:</label>
-              <input type="number" id="cust_age" class="form-control" required autofocus>
+              <input type="number" id="cust_age" class="form-control" required>
               <select class="movie-time">
                 <option class="time" value="12">12:00</option>
                 <option class="time" value= "17">5:00</option>
@@ -50,12 +54,13 @@
         <div class="col-sm-12">
 
           <div class="show-price">
-          <h4>Movie Title<span class="title"></span></h4>
-          <h4>Original Price<span class="price">$10</span></h4>
-          <h4>Age Discount<span class="age-discount"></span></h4>
-          <h4>Matinee Discount<span class="matinee-discount"></span></h4>
-          <h4>Run Type Discount<span class="run-type-discount"></span></h4>
-          <h3>Total Price<span class="total-price"</span></h3>
+            <span class="title"></span>
+            <h4><span class="showtime"></span></h4>
+            <h4>Original Price<span class="price">$10</span></h4>
+            <h4>Age Discount<span class="age-discount"></span></h4>
+            <h4>Matinee Discount<span class="matinee-discount"></span></h4>
+            <h4>Run Type Discount<span class="run-type-discount"></span></h4>
+            <h3>Total Price <span class="total-price"</span></h3>
           </div>
 
           </div>
@@ -66,10 +71,8 @@
       </div>
 
 
-
-
-
-
     </div>
+
+
   </body>
 </html>

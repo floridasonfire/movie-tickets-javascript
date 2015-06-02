@@ -34,8 +34,15 @@ function Customer(age){
 
 //jQuery
 $( document ).ready(function() {
+
+   $(function() {
+    $( "#draggable" ).draggable();
+  });
+
   $(".movie-form").submit(function(event){
       event.preventDefault();
+      $(".show-price").fadeOut("fast");
+
       var inputArray = $(".movie-title").val().split("|");
       var movieName = inputArray[0];
       var releaseType = inputArray[1];
@@ -50,6 +57,7 @@ $( document ).ready(function() {
       var ageDiscount = "$0"
       var matineeDiscount = "$0"
       var runTypeDiscount = "$0"
+      var timeOfMovie = "12:00 pm"
 
       if(ticket.age >= 65)  {
         ageDiscount = "$3"
@@ -60,14 +68,23 @@ $( document ).ready(function() {
       if(ticket.releaseType !=="first") {
         runTypeDiscount = "$2"
       };
+      if(time === 17){
+        timeOfMovie = "5:00 pm"
+      }else if(time === 19){
+        timeOfMovie = "7:30 pm"
+      }else if(time === 22){
+        timeOfMovie = "10:00 pm"
+      }
 
       var findPrice = function(){
-        $(".show-price").show();
+        $(".show-price").fadeIn("slow");
+
         $(".title").text(movieName);
+        $(".showtime").text(timeOfMovie)
         $(".age-discount").text(ageDiscount);
         $(".matinee-discount").text(matineeDiscount);
         $(".run-type-discount").text(runTypeDiscount);
-        $(".total-price").text(priceOfTicket);
+        $(".total-price").text("$" + priceOfTicket);
       };
 
       findPrice();

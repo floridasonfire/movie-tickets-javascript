@@ -1,14 +1,51 @@
-.page-header{
-  color:teal;
-  font-family:helvetica;
-  font-size:50px;
+body{
+  font-family:oswald;
+  background-color:#3B3838;
 }
 
+.page-header{
+  padding:15px;
+  margin-bottom:50px;
+  background-image:url("background_image.jpg");
+  background-size:18%;
+  color:white;
+  font-size:50px;
+  font-family:lobster;
+  text-shadow:-1px 0 black, 0 4px black, 3px 0 black, 0 -1px black;
+}
+label{
+  color:white;
+}
 .show-price{
   display:none;
+  margin-top:40px;
+  text-align:center;
+}
+
+.movie-time{
+  padding:15px;
+  margin-top:15px;
+}
+
+.movie-title{
+  padding:15px;
+  margin-top:15px;
 }
 
 .show-price span{
-  color:teal;
-  padding-left:20px;
+  color:orange;
+  padding-left:10px;
+}
+
+h4 {
+  color:white;
+}
+
+.title{
+  font-size:50px;
+
+}
+
+h3{
+  color:red;
 }
